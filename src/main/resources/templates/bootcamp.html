@@ -1,0 +1,29 @@
+<html layout:decorate="~{layout}">
+    <div layout:fragment="content" class="container my-3">
+        <table class="table">
+            <thead class="table-dark">
+            <tr>
+                <th>번호</th>
+                <th>프로그램명</th>
+                <th>내용</th>
+                <th>접수일</th>
+                <th>장소</th>
+                <th>비용</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="bootcamp,loop : ${bootcampList}">
+                <td th:text="${loop.count}"></td>
+                <td>
+                    <a th:href="@{https://nhn.chosun.ac.kr/?page_id=3290}"  th:text="${bootcamp.BName}"></a>
+                </td>
+
+                <td th:text="${bootcamp.BContent}"></td>
+                <td th:text="${bootcamp.BDay}"></td>
+                <td th:text="${bootcamp.BLocation}"></td>
+                <td th:text="${bootcamp.BCost}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</html>
