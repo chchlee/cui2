@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Competition</title>
-</head>
-<body>
-    <h2>Competition</h2>
-</body>
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="container my-3">
+    <table class="table">
+        <thead class="table-dark">
+        <tr>
+            <th>번호</th>
+            <th>프로그램명</th>
+            <th>내용</th>
+            <th>상금</th>
+            <th>접수일</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="competition,loop : ${competitionList}">
+            <td th:text="${loop.count}"></td>
+            <td>
+                <a th:text="${competition.CName}"></a>
+            </td>
+            <td th:text="${competition.CContent}"></td>
+            <td th:text="${competition.CDay}"></td>
+            <td th:text="${competition.CCost}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </html>
