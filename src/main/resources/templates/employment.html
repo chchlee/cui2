@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Employment</title>
-</head>
-<body>
-    <h2>employment</h2>
-</body>
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="container my-3">
+    <table class="table">
+        <thead class="table-dark">
+        <tr>
+            <th>번호</th>
+            <th>프로그램명</th>
+            <th>내용</th>
+            <th>접수일</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="employment,loop : ${employmentList}">
+            <td th:text="${loop.count}"></td>
+            <td>
+                <a th:text="${employment.EName}"></a>
+            </td>
+            <td th:text="${employment.EContent}"></td>
+            <td th:text="${employment.EDay}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </html>
