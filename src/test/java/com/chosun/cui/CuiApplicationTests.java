@@ -1,29 +1,31 @@
 package com.chosun.cui;
 
-import com.chosun.cui.bootcamp.Bootcamp;
-import com.chosun.cui.bootcamp.BootcampRepository;
+
+import com.chosun.cui.bootcamp.BootcampService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-//import static org.junit.jupiter.api.Assertions.assertEquals;
-
 @SpringBootTest
 class CuiApplicationTests {
 
+    @Autowired
+    private BootcampService bootcampService;
+
 //    @Autowired
-//    private BootcampRepository bootcampRepository;
+//    private CompetitionService competitionService;
+
+
 
 //    @Test
 //    void testJpa(){
-//        Bootcamp b1 = new Bootcamp();
-//        b1.setBName("nhn과정");
-//        b1.setBDay("22-11-20");
-//        b1.setBContent("백엔드 과정임");
-//        b1.setBLocation("광주조선대");
-//        b1.setBCost(0);
-//        this.bootcampRepository.save(b1);
+//        String BName = "test";
+//        String BContent = "test";
+//        String BDay = "test";
+//        String BLocation = "test";
+//        int BCost = 1110;
+//        this.bootcampService.create(BName,BContent,BDay,BLocation,BCost);
+//    }
 
 
-    }
 }

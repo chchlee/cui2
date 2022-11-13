@@ -1,7 +1,6 @@
 package com.chosun.cui.controller;
 
 import com.chosun.cui.competition.Competition;
-import com.chosun.cui.competition.CompetitionRepository;
 import com.chosun.cui.competition.CompetitionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -14,11 +13,12 @@ import java.util.List;
 @Controller
 public class CompetitionController {
 
-    private final CompetitionRepository competitionRepository;
+    private final CompetitionService competitionService;
 
     @RequestMapping("/competition")
     public String list(Model model){
-        List<Competition> competitionList = this.competitionRepository.findAll();
+
+        List<Competition> competitionList = this.competitionService.getList();
         model.addAttribute("competitionList",competitionList);
         return "competition";
     }
