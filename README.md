@@ -1,9 +1,11 @@
 # CHOSUN UNIVERSITY INFORMATION(CUI)
 ---
-### Chosun University Computer Engineering Student Employment Information Site Using Big Data Collection
+### Chosun University Computer Engineering Student Employment Information Site Using Big Data Collection 
 
-![12](https://user-images.githubusercontent.com/97272787/202378689-abe34e36-a413-4640-85f9-d670da34a7fe.png)
-![34](https://user-images.githubusercontent.com/97272787/202378695-3c22ac23-a351-4818-ab1d-a12ab4015192.png)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/97272787/202378689-abe34e36-a413-4640-85f9-d670da34a7fe.png" width=400 height=200 />
+<img src="https://user-images.githubusercontent.com/97272787/202378695-3c22ac23-a351-4818-ab1d-a12ab4015192.png" width=400 height=200 />
+</div>
 
 
 ---
