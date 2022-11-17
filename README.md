@@ -7,6 +7,8 @@
 <img src="https://user-images.githubusercontent.com/97272787/202378695-3c22ac23-a351-4818-ab1d-a12ab4015192.png" width=400 height=200 />
 </div>
 
+- domain : chosunsite.info
+
 
 ---
 
