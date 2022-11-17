@@ -47,7 +47,6 @@
 - Using aws lightsail to open ubuntu server and postgreSQL server
 - Approximately 10 people interviewed (to be added later)
 - Processing job information database
-- Completed this page
 
 
 ---
