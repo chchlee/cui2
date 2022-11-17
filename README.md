@@ -24,6 +24,9 @@
 
 ---
 ### Contents of weekly tasks
+
+<div align="center">
+  
 |week|Contents of weekly tasks|
 |---|---|
 |1|Background research for project ideas|
@@ -41,6 +44,8 @@
 |13|Database Development / Create a test case|
 |14|Check for error correction and distribution|
 |15|Site Opening and Deployment|
+  
+  </div>
 
 ---
 ### Current progress(22.11.17)
