@@ -1,17 +1,24 @@
 # CHOSUN UNIVERSITY INFORMATION(CUI)
-
+---
 ### Chosun University Computer Engineering Student Employment Information Site Using Big Data Collection
 
+![12](https://user-images.githubusercontent.com/97272787/202378689-abe34e36-a413-4640-85f9-d670da34a7fe.png)
+![34](https://user-images.githubusercontent.com/97272787/202378695-3c22ac23-a351-4818-ab1d-a12ab4015192.png)
 
 
 ---
-- Participating students : Chunghui Lee, Kanghyun Choi
-- Role : Chunghui Lee(Paperwork and back-end dev) Kanghyun Choi(Web-crawling and frond-end dev)
+
+### Authors
+- Chunghui Lee(Paperwork and back-end dev) choonghee123@gmail.com
+- Kanghyun Choi(Web-crawling and frond-end dev) goaqjrj13@gmail.com
+
+---
 
 ### Reasons for production
 -  Chosun University Computer Engineering Department Employment Information Site is opened to help promote participation in external activities and obtain employment information.
 -  Information for career as a developer and engineer is provided by presenting guidelines for employment/start-up.
 
+---
 ### Contents of weekly tasks
 |week|Contents of weekly tasks|
 |---|---|
@@ -31,10 +38,19 @@
 |14|Check for error correction and distribution|
 |15|Site Opening and Deployment|
 
+---
+### Current progress(22.11.17)
+- Development of web front end using thymeleaf (html) completed
+- Complete page basic design using bootstrap
+- Create a backend local server using Springboot, Tomcat and JPA
+- Pagenation task complete (applies priority algorithm by upload time)
+- Using aws lightsail to open ubuntu server and postgreSQL server
+- Approximately 10 people interviewed (to be added later)
+- Processing job information database
+- Completed this page
 
 
-
-
+---
 
 ### 사용 스택
 
