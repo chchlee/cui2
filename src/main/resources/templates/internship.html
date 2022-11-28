@@ -3,10 +3,12 @@
     <table class="table">
         <thead class="table-dark">
         <tr>
-            <th>번호</th>
-            <th>프로그램명</th>
-            <th>내용</th>
-            <th>접수일</th>
+            <th style="text-align: center;">번호</th>
+            <th style="text-align: center;">프로그램명</th>
+            <th style="text-align: center;">내용</th>
+            <th style="text-align: center;">접수일</th>
+            <th style="text-align: center;">URL</th>
+            <th style="text-align: center;">비고</th>
         </tr>
         </thead>
         <tbody>
@@ -17,6 +19,8 @@
             </td>
             <td th:text="${internship.IContent}"></td>
             <td th:text="${internship.IDay}"></td>
+            <td th:text="${internship.IUrl}"></td>
+            <td th:text="${internship.IRemark}"></td>
         </tr>
         </tbody>
     </table>

@@ -5,3 +5,8 @@
 /*input[type=submit]{*/
 /*    margin-top: 10px;*/
 /*}*/
+
+.card-img-top{
+    height: 15rem;
+    object-fit: cover;
+}

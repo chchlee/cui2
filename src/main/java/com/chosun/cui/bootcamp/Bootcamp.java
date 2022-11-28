@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -20,13 +21,16 @@ public class Bootcamp {
     private String BContent;
 
     @Column(length = 200)
-    private String BDay;
+    private Date BDay;
 
     @Column(length = 200)
     private String BLocation;
 
     @Column(length = 200)
-    private Integer BCost;
+    private String BCost;
+
+    @Column(length = 200)
+    private String BUrl;
 
 
 }

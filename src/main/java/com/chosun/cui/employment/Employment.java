@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -20,5 +21,11 @@ public class Employment {
     private String EContent;
 
     @Column(length = 200)
-    private String EDay;
+    private Date EDay;
+
+    @Column(length = 200)
+    private String EUrl;
+
+    @Column(length = 200)
+    private String ERemark;
 }

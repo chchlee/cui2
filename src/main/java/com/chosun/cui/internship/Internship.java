@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -20,6 +21,13 @@ public class Internship {
     private String IContent;
 
     @Column(length = 200)
-    private String IDay;
+    private Date IDay;
+
+    @Column(length = 200)
+    private String IUrl;
+
+    @Column(length = 200)
+    private String IRemark;
+
 
 }

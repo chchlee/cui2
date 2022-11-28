@@ -17,15 +17,14 @@ class CuiApplicationTests {
 
 
 
-//    @Test
-//    void testJpa(){
-//        String BName = "test";
-//        String BContent = "test";
-//        String BDay = "test";
-//        String BLocation = "test";
-//        int BCost = 1110;
-//        this.bootcampService.create(BName,BContent,BDay,BLocation,BCost);
-//    }
+    @Test
+    void testJpa(){
+        String BName = "test";
+        String BContent = "test";
+        String BDay = "test";
+        String BLocation = "test";
+        int BCost = 1110;
+    }
 
 
 }

@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -20,10 +21,13 @@ public class Competition {
     private String CContent;
 
     @Column(length = 200)
-    private String CDay;
+    private Date CDay;
 
     @Column(length = 200)
     private Integer CCost;
+
+    @Column(length = 200)
+    private String CUrl;
 
 
 }

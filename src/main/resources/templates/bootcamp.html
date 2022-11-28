@@ -3,25 +3,27 @@
         <table class="table">
             <thead class="table-dark">
             <tr>
-                <th>번호</th>
-                <th>프로그램명</th>
-                <th>내용</th>
-                <th>접수일</th>
-                <th>장소</th>
-                <th>비용</th>
+                <th style="text-align: center;">번호</th>
+                <th style="text-align: center;">프로그램명</th>
+                <th style="text-align: center;">내용</th>
+                <th style="text-align: center;">마감일</th>
+                <th style="text-align: center;">장소</th>
+                <th style="text-align: center;">비용</th>
+                <th style="text-align: center;">URL</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="bootcamp,loop : ${paging}">
                 <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"></td>
                 <td>
-                    <a th:href="@{https://nhn.chosun.ac.kr/?page_id=3290}"  th:text="${bootcamp.BName}"></a>
+                    <a th:text="${bootcamp.BName}"></a>
                 </td>
 
                 <td th:text="${bootcamp.BContent}"></td>
                 <td th:text="${bootcamp.BDay}"></td>
                 <td th:text="${bootcamp.BLocation}"></td>
                 <td th:text="${bootcamp.BCost}"></td>
+                <td th:text="${bootcamp.BUrl}"></td>
             </tr>
             </tbody>
         </table>
