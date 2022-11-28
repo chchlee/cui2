@@ -17,7 +17,7 @@ public class Interview {
     private Integer IVNumber;
 
     @Column(length = 200)
-    private String IVCName;
+    private String IVName;
 
     private LocalDateTime createDate;
 }

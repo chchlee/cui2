@@ -1,2 +1,64 @@
-<h1>제목</h1>
-<h2>내용</h2>
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="container my-3">
+    <table class="table">
+        <thead class="table-dark">
+        <tr>
+            <th style="text-align: center;">이름</th>
+            <th style="text-align: center;">졸업년월</th>
+            <th style="text-align: center;">학과</th>
+            <th style="text-align: center;">입사기업명</th>
+            <th style="text-align: center;">입사년도</th>
+            <th style="text-align: center;">직무</th>
+            <th style="text-align: center;">학점</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="competition,loop : ${competitionList}">
+            <td th:text="${loop.count}"></td>
+            <td>
+                <a th:text="${competition.CName}"></a>
+            </td>
+            <td th:text="${competition.CContent}"></td>
+            <td th:text="${competition.CDay}"></td>
+            <td th:text="${competition.CCost}"></td>
+            <td th:text="${competition.CUrl}"></td>
+
+        </tr>
+        </tbody>
+    </table>
+    <table class="table">
+    <thead class="table-dark">
+    <tr>
+        <th style="text-align: center;">자격증</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="competition,loop : ${competitionList}">
+        <td th:text="${loop.count}"></td>
+        <td>
+            <a th:text="${competition.CName}"></a>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+
+    <table class="table">
+        <thead class="table-dark">
+        <tr>
+            <th style="text-align: center;">내용</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="competition,loop : ${competitionList}">
+            <td th:text="${loop.count}"></td>
+            <td>
+                <a th:text="${competition.CName}"></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
+</html>
+
