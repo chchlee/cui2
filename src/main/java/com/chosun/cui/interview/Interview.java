@@ -20,4 +20,31 @@ public class Interview {
     private String IVName;
 
     private LocalDateTime createDate;
+
+    @Column(length = 200)
+    private String IVLName;
+
+    @Column(length = 200)
+    private String IVLGraduation;
+
+    @Column(length = 200)
+    private String IVLDepartment;
+
+    @Column(length = 200)
+    private String IVLEnterprise;
+
+    @Column(length = 200)
+    private String IVLDate;
+
+    @Column(length = 200)
+    private String IVLJob;
+
+    @Column(length = 200)
+    private String IVLCredit;
+
+    @Column(length = 200)
+    private String IVLCertificate;
+
+    @Column(length = 200)
+    private String IVLContents;
 }
