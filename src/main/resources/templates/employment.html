@@ -3,10 +3,12 @@
     <table class="table">
         <thead class="table-dark">
         <tr>
-            <th>번호</th>
-            <th>프로그램명</th>
-            <th>내용</th>
-            <th>접수일</th>
+            <th style="text-align: center;">번호</th>
+            <th style="text-align: center;">채용공고</th>
+            <th style="text-align: center;">내용</th>
+            <th style="text-align: center;">접수일</th>
+            <th style="text-align: center;">URL</th>
+            <th style="text-align: center;">비고</th>
         </tr>
         </thead>
         <tbody>
@@ -17,6 +19,8 @@
             </td>
             <td th:text="${employment.EContent}"></td>
             <td th:text="${employment.EDay}"></td>
+            <td th:text="${employment.EUrl}"></td>
+            <td th:text="${employment.ERemark}"></td>
         </tr>
         </tbody>
     </table>
