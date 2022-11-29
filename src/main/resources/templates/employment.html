@@ -1,28 +1,26 @@
 <html layout:decorate="~{layout}">
 <div layout:fragment="content" class="container my-3">
-    <table class="table">
+    <table class="table" style="table-layout: fixed">
         <thead class="table-dark">
         <tr>
-            <th style="text-align: center;">번호</th>
+            <th style="text-align: center; width: 50px">번호</th>
             <th style="text-align: center;">채용공고</th>
             <th style="text-align: center;">내용</th>
-            <th style="text-align: center;">접수일</th>
-            <th style="text-align: center;">URL</th>
+            <th style="text-align: center; width: 100px">접수일</th>
+            <th style="text-align: center; width: 50px">URL</th>
             <th style="text-align: center;">비고</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="employment,loop : ${paging}">
             <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"></td>
-            <td>
-                <a th:text="${employment.EName}"></a>
-            </td>
-            <td th:text="${employment.EContent}"></td>
-            <td th:text="${employment.EDay}"></td>
+            <td th:text="${employment.EName}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
+            <td th:text="${employment.EContent}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
+            <td th:text="${employment.EDay}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
             <td>
                 <a th:href="${employment.EUrl}" target="_blank" th:text="링크"></a>
             </td>
-            <td th:text="${employment.ERemark}"></td>
+            <td th:text="${employment.ERemark}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
         </tr>
         </tbody>
     </table>

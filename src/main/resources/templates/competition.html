@@ -1,25 +1,23 @@
 <html layout:decorate="~{layout}">
 <div layout:fragment="content" class="container my-3">
-    <table class="table">
+    <table class="table"style="table-layout: fixed">
         <thead class="table-dark">
         <tr>
-            <th style="text-align: center;">번호</th>
+            <th style="text-align: center; width: 50px">번호</th>
             <th style="text-align: center;">프로그램명</th>
             <th style="text-align: center;">내용</th>
-            <th style="text-align: center;">접수일</th>
+            <th style="text-align: center; width: 100px">접수일</th>
             <th style="text-align: center;">상금</th>
-            <th style="text-align: center;">URL</th>
+            <th style="text-align: center; width: 50px">URL</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="competition,loop : ${paging}">
             <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"></td>
-            <td>
-                <a th:text="${competition.CName}"></a>
-            </td>
-            <td th:text="${competition.CContent}"></td>
-            <td th:text="${competition.CDay}"></td>
-            <td th:text="${competition.CCost}"></td>
+            <td th:text="${competition.CName}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
+            <td th:text="${competition.CContent}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
+            <td th:text="${competition.CDay}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
+            <td th:text="${competition.CCost}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
             <td>
                 <a th:href="${competition.CUrl}" target="_blank" th:text="링크"></a>
             </td>

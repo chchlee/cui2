@@ -1,28 +1,25 @@
 <html layout:decorate="~{layout}">
     <div layout:fragment="content" class="container my-3">
-        <table class="table">
+        <table class="table"  style="table-layout: fixed">
             <thead class="table-dark">
             <tr>
-                <th style="text-align: center;">번호</th>
+                <th style="text-align: center; width: 50px">번호</th>
                 <th style="text-align: center;">프로그램명</th>
                 <th style="text-align: center;">내용</th>
-                <th style="text-align: center;">마감일</th>
+                <th style="text-align: center; width: 100px">마감일</th>
                 <th style="text-align: center;">장소</th>
                 <th style="text-align: center;">비용</th>
-                <th style="text-align: center;">URL</th>
+                <th style="text-align: center; width: 50px">URL</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="bootcamp,loop : ${paging}">
                 <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"></td>
-                <td>
-                    <a th:text="${bootcamp.BName}"></a>
-                </td>
-
-                <td th:text="${bootcamp.BContent}"></td>
-                <td th:text="${bootcamp.BDay}"></td>
-                <td th:text="${bootcamp.BLocation}"></td>
-                <td th:text="${bootcamp.BCost}"><</td>
+                <td th:text="${bootcamp.BName}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"></td>
+                <td th:text="${bootcamp.BContent}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"></td>
+                <td th:text="${bootcamp.BDay}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"></td>
+                <td th:text="${bootcamp.BLocation}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"></td>
+                <td th:text="${bootcamp.BCost}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"><</td>
                 <td>
                     <a th:href="${bootcamp.BUrl}" target="_blank" th:text="링크"></a>
                 </td>

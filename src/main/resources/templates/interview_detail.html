@@ -13,14 +13,14 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="interview: ${interviewList}">
-            <td th:text="${interview.IVLName}"></td>
-            <td th:text="${interview.IVLGraduation}"></td>
-            <td th:text="${interview.IVLDepartment}"></td>
-            <td th:text="${interview.IVLEnterprise}"></td>
-            <td th:text="${interview.IVLDate}"></td>
-            <td th:text="${interview.IVLJob}"></td>
-            <td th:text="${interview.IVLCredit}"></td>
+        <tr th:each="interview: ${interviewList}" align="center">
+            <td th:text="${interview.IVLName}" style="width: 75px"></td>
+            <td th:text="${interview.IVLGraduation}" style="width: 75px"></td>
+            <td th:text="${interview.IVLDepartment}" style="width: 100px"></td>
+            <td th:text="${interview.IVLEnterprise}" style="width: 100px"></td>
+            <td th:text="${interview.IVLDate}" style="width: 75px"></td>
+            <td th:text="${interview.IVLJob}" style="width: 75px"></td>
+            <td th:text="${interview.IVLCredit}" style="width: 50px"></td>
 
         </tr>
         </tbody>
