@@ -20,7 +20,9 @@
             <td th:text="${competition.CContent}"></td>
             <td th:text="${competition.CDay}"></td>
             <td th:text="${competition.CCost}"></td>
-            <td th:text="${competition.CUrl}"></td>
+            <td>
+                <a th:href="${competition.CUrl}" target="_blank" th:text="링크"></a>
+            </td>
 
         </tr>
         </tbody>

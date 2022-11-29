@@ -19,7 +19,9 @@
             </td>
             <td th:text="${employment.EContent}"></td>
             <td th:text="${employment.EDay}"></td>
-            <td th:text="${employment.EUrl}"></td>
+            <td>
+                <a th:href="${employment.EUrl}" target="_blank" th:text="링크"></a>
+            </td>
             <td th:text="${employment.ERemark}"></td>
         </tr>
         </tbody>
