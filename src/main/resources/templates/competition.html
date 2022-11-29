@@ -6,20 +6,20 @@
             <th style="text-align: center; width: 50px">번호</th>
             <th style="text-align: center;">프로그램명</th>
             <th style="text-align: center;">내용</th>
-            <th style="text-align: center; width: 100px">접수일</th>
-            <th style="text-align: center;">상금</th>
+            <th style="text-align: center; width: 100px">마감일</th>
+            <th style="text-align: center; width: 100px">상금</th>
             <th style="text-align: center; width: 50px">URL</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="competition,loop : ${paging}">
-            <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"></td>
+            <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"  style="text-align: center"></td>
             <td th:text="${competition.CName}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
             <td th:text="${competition.CContent}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
-            <td th:text="${competition.CDay}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
-            <td th:text="${competition.CCost}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
+            <td th:text="${competition.CDay}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"></td>
+            <td th:text="${competition.CCost}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"></td>
             <td>
-                <a th:href="${competition.CUrl}" target="_blank" th:text="링크"></a>
+                <a th:href="${competition.CUrl}" target="_blank" th:text="링크" style="text-align: center"></a>
             </td>
 
         </tr>

@@ -7,16 +7,16 @@
                 <th style="text-align: center;">프로그램명</th>
                 <th style="text-align: center;">내용</th>
                 <th style="text-align: center; width: 100px">마감일</th>
-                <th style="text-align: center;">장소</th>
-                <th style="text-align: center;">비용</th>
+                <th style="text-align: center; width: 100px">장소</th>
+                <th style="text-align: center; width: 100px">비용</th>
                 <th style="text-align: center; width: 50px">URL</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="bootcamp,loop : ${paging}">
-                <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"></td>
-                <td th:text="${bootcamp.BName}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"></td>
-                <td th:text="${bootcamp.BContent}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"></td>
+                <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}" style="text-align: center"></td>
+                <td th:text="${bootcamp.BName}" style="text-overflow:ellipsis; overflow:hidden;"></td>
+                <td th:text="${bootcamp.BContent}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;"></td>
                 <td th:text="${bootcamp.BDay}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"></td>
                 <td th:text="${bootcamp.BLocation}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"></td>
                 <td th:text="${bootcamp.BCost}" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align: center"><</td>
