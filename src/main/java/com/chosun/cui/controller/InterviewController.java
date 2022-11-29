@@ -27,8 +27,10 @@ public class InterviewController {
 
     @RequestMapping(value = "/detail/{IVNumber}")
     public String detail(Model model, @PathVariable("IVNumber") Integer IVNumber){
+        List<Interview> interviewList = this.interviewService.getList();
         Interview interview = this.interviewService.getInterview(IVNumber);
         model.addAttribute("interview",interview);
+        model.addAttribute("interviewList",interviewList);
         return "interview_detail";
     }
 }

@@ -6,14 +6,14 @@
             <th style="text-align: center;">번호</th>
             <th style="text-align: center;">프로그램명</th>
             <th style="text-align: center;">내용</th>
-            <th style="text-align: center;">상금</th>
             <th style="text-align: center;">접수일</th>
+            <th style="text-align: center;">상금</th>
             <th style="text-align: center;">URL</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="competition,loop : ${competitionList}">
-            <td th:text="${loop.count}"></td>
+        <tr th:each="competition,loop : ${paging}">
+            <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"></td>
             <td>
                 <a th:text="${competition.CName}"></a>
             </td>
@@ -25,5 +25,27 @@
         </tr>
         </tbody>
     </table>
+    <!-- 페이징처리 시작 -->
+    <div th:if="${!paging.isEmpty()}">
+        <ul class="pagination justify-content-center">
+            <li class="page-item" th:classappend="${!paging.hasPrevious} ? 'disabled'">
+                <a class="page-link"
+                   th:href="@{|?page=${paging.number-1}|}">
+                    <span>이전</span>
+                </a>
+            </li>
+            <li th:each="page: ${#numbers.sequence(0, paging.totalPages-1)}"
+                th:classappend="${page == paging.number} ? 'active'"
+                class="page-item">
+                <a th:text="${page}" class="page-link" th:href="@{|?page=${page}|}"></a>
+            </li>
+            <li class="page-item" th:classappend="${!paging.hasNext} ? 'disabled'">
+                <a class="page-link" th:href="@{|?page=${paging.number+1}|}">
+                    <span>다음</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 페이징처리 끝 -->
 </div>
 </html>

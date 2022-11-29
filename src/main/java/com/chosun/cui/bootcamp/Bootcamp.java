@@ -21,7 +21,7 @@ public class Bootcamp {
     private String BContent;
 
     @Column(length = 200)
-    private Date BDay;
+    private String BDay;
 
     @Column(length = 200)
     private String BLocation;

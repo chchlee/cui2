@@ -45,6 +45,6 @@ public class Interview {
     @Column(length = 200)
     private String IVLCertificate;
 
-    @Column(length = 200)
+    @Column(columnDefinition = "TEXT")
     private String IVLContents;
 }

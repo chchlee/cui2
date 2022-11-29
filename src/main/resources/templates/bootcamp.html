@@ -22,8 +22,10 @@
                 <td th:text="${bootcamp.BContent}"></td>
                 <td th:text="${bootcamp.BDay}"></td>
                 <td th:text="${bootcamp.BLocation}"></td>
-                <td th:text="${bootcamp.BCost}"></td>
-                <td th:text="${bootcamp.BUrl}"></td>
+                <td th:text="${bootcamp.BCost}"><</td>
+                <td>
+                    <a th:href="${bootcamp.BUrl}" target="_blank" th:text="링크"></a>
+                </td>
             </tr>
             </tbody>
         </table>

@@ -13,15 +13,14 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="competition,loop : ${competitionList}">
-            <td th:text="${loop.count}"></td>
-            <td>
-                <a th:text="${competition.CName}"></a>
-            </td>
-            <td th:text="${competition.CContent}"></td>
-            <td th:text="${competition.CDay}"></td>
-            <td th:text="${competition.CCost}"></td>
-            <td th:text="${competition.CUrl}"></td>
+        <tr th:each="interview: ${interviewList}">
+            <td th:text="${interview.IVLName}"></td>
+            <td th:text="${interview.IVLGraduation}"></td>
+            <td th:text="${interview.IVLDepartment}"></td>
+            <td th:text="${interview.IVLEnterprise}"></td>
+            <td th:text="${interview.IVLDate}"></td>
+            <td th:text="${interview.IVLJob}"></td>
+            <td th:text="${interview.IVLCredit}"></td>
 
         </tr>
         </tbody>
@@ -33,11 +32,8 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="competition,loop : ${competitionList}">
-        <td th:text="${loop.count}"></td>
-        <td>
-            <a th:text="${competition.CName}"></a>
-        </td>
+    <tr  th:each="interview: ${interviewList}">
+        <td th:text="${interview.IVLCertificate}"></td>
     </tr>
     </tbody>
     </table>
@@ -49,11 +45,8 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="competition,loop : ${competitionList}">
-            <td th:text="${loop.count}"></td>
-            <td>
-                <a th:text="${competition.CName}"></a>
-            </td>
+        <tr th:each="interview: ${interviewList}">
+            <td th:text="${interview.IVLContents}"></td>
         </tr>
         </tbody>
     </table>

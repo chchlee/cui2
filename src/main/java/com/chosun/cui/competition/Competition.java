@@ -21,10 +21,10 @@ public class Competition {
     private String CContent;
 
     @Column(length = 200)
-    private Date CDay;
+    private String CDay;
 
     @Column(length = 200)
-    private Integer CCost;
+    private String CCost;
 
     @Column(length = 200)
     private String CUrl;
