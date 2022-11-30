@@ -13,6 +13,6 @@ public class HomeController {
 
     @RequestMapping("/")
     public String root(){
-        return "redirect:/bootcamp";
+        return "redirect:/main";
     }
 }
