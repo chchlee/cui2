@@ -1,0 +1,61 @@
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="container my-3">
+    <table class="table">
+        <thead class="table-dark">
+        <tr>
+            <th style="text-align: center;">이름</th>
+            <th style="text-align: center;">졸업년월</th>
+            <th style="text-align: center;">학과</th>
+            <th style="text-align: center;">입사기업명</th>
+            <th style="text-align: center;">입사년도</th>
+            <th style="text-align: center;">직무</th>
+            <th style="text-align: center;">학점</th>
+        </tr>
+        </thead>
+        <tbody>
+<!--        <tr th:each="interview: ${interviewList}" align="center">-->
+        <tr th:each="interviewList, index : ${1}">
+            <td th:text="${interview.IVLName}" style="width: 75px; text-align: center"></td>
+            <td th:text="${interview.IVLGraduation}" style="width: 75px; text-align: center"></td>
+            <td th:text="${interview.IVLDepartment}" style="width: 100px; text-align: center"></td>
+            <td th:text="${interview.IVLEnterprise}" style="width: 100px; text-align: center"></td>
+            <td th:text="${interview.IVLDate}" style="width: 75px; text-align: center"></td>
+            <td th:text="${interview.IVLJob}" style="width: 75px; text-align: center"></td>
+            <td th:text="${interview.IVLCredit}" style="width: 50px; text-align: center"></td>
+
+        </tr>
+        </tbody>
+    </table>
+    <table class="table">
+    <thead class="table-dark">
+    <tr>
+        <th style="text-align: center;">자격증</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="interviewList, index : ${1}">
+        <td th:text="${interview.IVLCertificate}"></td>
+    </tr>
+    </tbody>
+    </table>
+
+    <table class="table">
+        <thead class="table-dark">
+        <tr>
+            <th style="text-align: center;">내용</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="interviewList, index : ${1}">
+<!--            <td th:text="${interview.IVLContents}"></td>-->
+            <td th:utext="${interview.IVLContents}"></td>
+
+        </tr>
+
+        </tbody>
+    </table>
+
+
+</div>
+</html>
+

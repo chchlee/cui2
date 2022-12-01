@@ -21,7 +21,7 @@ public class Internship {
     private String IContent;
 
     @Column(length = 200)
-    private Date IDay;
+    private String IDay;
 
     @Column(length = 200)
     private String IUrl;

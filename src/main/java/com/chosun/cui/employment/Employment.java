@@ -21,7 +21,7 @@ public class Employment {
     private String EContent;
 
     @Column(length = 200)
-    private Date EDay;
+    private String EDay;
 
     @Column(length = 200)
     private String EUrl;

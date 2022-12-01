@@ -1,5 +1,8 @@
 <nav th:fragment="navbarFragment" class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
     <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="https://www3.chosun.ac.kr/sites/chosun/images/bs-symbol1.png" alt="조선대학교" style="width: 35px; height: 35px">
+        </a>
         <a class="navbar-brand" href="/">조선 학생 정보 시스템</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,22 +10,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/competition">공모전</a>
+
+            <li class="nav-item-1">
+                    <a class="nav-link" href="/bootcamp">교육일정</a>
                 </li>
                 <li class="nav-item-2">
-                    <a class="nav-link" href="/internship">인턴쉽</a>
+                    <a class="nav-link" href="/competition">공모전</a>
                 </li>
                 <li class="nav-item-3">
-                    <a class="nav-link" href="/employment">채용정보</a>
+                    <a class="nav-link" href="/internship">인턴쉽</a>
                 </li>
                 <li class="nav-item-4">
-                    <a class="nav-link" href="/interview">취업수기</a>
+                    <a class="nav-link" href="/employment">채용정보</a>
                 </li>
                 <li class="nav-item-5">
-                    <a class="nav-link" href="/roadmap">로드맵</a>
+                    <a class="nav-link" href="/interview/list">취업수기</a>
                 </li>
                 <li class="nav-item-6">
+                    <a class="nav-link" href="/roadmap">로드맵</a>
+                </li>
+                <li class="nav-item-7">
                     <a class="nav-link" href="/creator">만든이</a>
             </ul>
         </div>

@@ -5,9 +5,12 @@ import com.chosun.cui.interview.InterviewService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
+
+@RequestMapping("/interview")
 
 @RequiredArgsConstructor
 @Controller
@@ -15,10 +18,19 @@ public class InterviewController {
 
     private final InterviewService interviewService;
 
-    @RequestMapping("/interview")
+    @RequestMapping("/list")
     public String interview(Model model){
         List<Interview> interviewList = this.interviewService.getList();
         model.addAttribute("interviewList", interviewList);
-        return "interview";
+        return "interview_list";
+    }
+
+    @RequestMapping(value = "/detail/{IVNumber}")
+    public String detail(Model model, @PathVariable("IVNumber") Integer IVNumber){
+        List<Interview> interviewList = this.interviewService.getList();
+        Interview interview = this.interviewService.getInterview(IVNumber);
+        model.addAttribute("interview",interview);
+        model.addAttribute("interviewList",interviewList);
+        return "interview_detail";
     }
 }
