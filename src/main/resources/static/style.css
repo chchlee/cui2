@@ -24,7 +24,7 @@
     font-size: 25px;
     content: "";
     display: block;
-    width: 170px;
+    width: 250px;
     border-bottom: 1px solid #bcbcbc;
     margin: 20px;
 
@@ -40,7 +40,33 @@
     font-size: 20px;
 }
 
+.card-title-head{
+    font-size: 25px;
+    margin-bottom: -10px;
+}
+
+.card-title-main2{
+    font-size: 35px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.card-title-body{
+    font-size: 20px;
+    color: #6c757d;
+}
+
 .main-text-header{
     font-size: 40px;
     text-align: center;
 }
+
+
+.carousel-inner > .carousel-item active > img {
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 200px;
+}
+
+
