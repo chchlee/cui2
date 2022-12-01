@@ -1,10 +1,18 @@
 # CHOSUN UNIVERSITY INFORMATION(CUI)
 ---
 ### Chosun University Computer Engineering Student Employment Information Site Using Big Data Collection 
+### 조선대학교 컴퓨터공학과 취업/학습 정보 사이트
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/97272787/202378689-abe34e36-a413-4640-85f9-d670da34a7fe.png" width=400 height=200 />
-<img src="https://user-images.githubusercontent.com/97272787/202378695-3c22ac23-a351-4818-ab1d-a12ab4015192.png" width=400 height=200 />
+<img width="1412" alt="메인페이지" src="https://user-images.githubusercontent.com/97272787/205049292-74e98fb7-153e-4dba-b453-fa833f28896b.png" style="width:300px;height:150px">
+<img width="715" alt="교육일정" src="https://user-images.githubusercontent.com/97272787/205049592-49875064-7998-457f-90b1-8da6e332d553.png"style="width:300px;height:150px">
+<img width="1426" alt="인턴쉽" src="https://user-images.githubusercontent.com/97272787/205049878-f1f11f83-33eb-4050-a639-e5de039ce0c6.png"style="width:300px;height:150px">
+<img width="1426" alt="공모전" src="https://user-images.githubusercontent.com/97272787/205049881-568a0294-503f-43cf-bd10-a8201a7bc858.png"style="width:300px;height:150px">
+<img width="1434" alt="채용정보" src="https://user-images.githubusercontent.com/97272787/205049901-f013041c-4376-4311-9b3d-c6562c1e40d3.png"style="width:300px;height:150px">
+<img width="1411" alt="로드맵" src="https://user-images.githubusercontent.com/97272787/205049425-866ff7f4-ae49-4345-81c7-00b7c5b919c0.png"style="width:300px;height:150px">
+<img width="1425" alt="취업수기" src="https://user-images.githubusercontent.com/97272787/205049503-e5abdbf5-2f82-4357-8dc2-df316fc6b3ea.png"style="width:300px;height:150px">
+<img width="1434" alt="취업수기디테일" src="https://user-images.githubusercontent.com/97272787/205049517-21d9eae1-8231-443e-8f3d-3ed95399a542.png"style="width:300px;height:150px">
+<img width="1386" alt="만든이" src="https://user-images.githubusercontent.com/97272787/205049632-e9a1918c-4350-41b9-9351-cef5334fa895.png"style="width:300px;height:150px">
 </div>
 
 - domain : chosunsite.info
@@ -23,27 +31,35 @@
 -  Information for career as a developer and engineer is provided by presenting guidelines for employment/start-up.
 
 ---
+
+### How to execute?
+- git clone https://github.com/chchlee/cui2
+- Run build.gradle
+- Data injection
+- excution
+
+---
 ### Contents of weekly tasks
 
 <div align="center">
   
-|week|Contents of weekly tasks|
-|---|---|
-|1|Background research for project ideas|
-|2|Mock-up production and senior interview list for site production|
-|3|Crawling Employment Information Data|
-|4|Face-to-face interview after moving to Seoul and Gyeonggido|
-|5|Face-to-face interview after Daejeon and Jeonju|
-|6|Face-to-face interview after moving to Naju|
-|7|Frontend of the page and write flow-chart development.|
-|8|Frontend development|
-|9|Backend Server Development|
-|10|Backend Server Development / Create a test case|
-|11|Database Development|
-|12|Backend and Database Interworking / Distribute test pages|
-|13|Database Development / Create a test case|
-|14|Check for error correction and distribution|
-|15|Site Opening and Deployment|
+|week|Contents of weekly tasks|check|
+|---|---|---|
+|1|Background research for project ideas|✅|
+|2|Mock-up production and senior interview list for site production|✅|
+|3|Crawling Employment Information Data|✅|
+|4|Face-to-face interview after moving to Seoul and Gyeonggido|✅|
+|5|Face-to-face interview after Daejeon and Jeonju|✅|
+|6|Face-to-face interview after moving to Naju|✅|
+|7|Frontend of the page and write flow-chart development.|✅|
+|8|Frontend development|✅|
+|9|Backend Server Development|✅|
+|10|Backend Server Development / Create a test case|✅|
+|11|Database Development|✅|
+|12|Backend and Database Interworking / Distribute test pages|✅|
+|13|Database Development / Create a test case|✅|
+|14|Check for error correction and distribution|✅|
+|15|Site Opening and Deployment|✅|
   
   </div>
 
@@ -60,6 +76,19 @@
 
 ---
 
+### Current progress(22.12.01)
+- Supplemetation front-end
+- Data Processing Completed
+- Site State Management and Paging Operations
+
+---
+
+### Future improvements(22.12.02 ~ )
+- Site UX/UI Improvements
+- Data accumulation
+- User Statistics Survey and Improvement
+- Improved responsive bulletin boards
+---
 ### 사용 스택
 
 <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white"> <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=PostgreSQL&logoColor=white"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=Ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=Thymeleaf&logoColor=white"> <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"> <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"> <img src="https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=aws&logoColor=white"> <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=for-the-badge&logo=IntelliJ IDEA&logoColor=white"> <img src="https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=NGINX& logoColor=white">
