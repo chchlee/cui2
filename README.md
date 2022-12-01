@@ -6,13 +6,8 @@
 <div align="center">
 <img width="1412" alt="메인페이지" src="https://user-images.githubusercontent.com/97272787/205049292-74e98fb7-153e-4dba-b453-fa833f28896b.png" style="width:300px;height:150px">
 <img width="715" alt="교육일정" src="https://user-images.githubusercontent.com/97272787/205049592-49875064-7998-457f-90b1-8da6e332d553.png"style="width:300px;height:150px">
-<img width="1426" alt="인턴쉽" src="https://user-images.githubusercontent.com/97272787/205049878-f1f11f83-33eb-4050-a639-e5de039ce0c6.png"style="width:300px;height:150px">
-<img width="1426" alt="공모전" src="https://user-images.githubusercontent.com/97272787/205049881-568a0294-503f-43cf-bd10-a8201a7bc858.png"style="width:300px;height:150px">
-<img width="1434" alt="채용정보" src="https://user-images.githubusercontent.com/97272787/205049901-f013041c-4376-4311-9b3d-c6562c1e40d3.png"style="width:300px;height:150px">
-<img width="1411" alt="로드맵" src="https://user-images.githubusercontent.com/97272787/205049425-866ff7f4-ae49-4345-81c7-00b7c5b919c0.png"style="width:300px;height:150px">
-<img width="1425" alt="취업수기" src="https://user-images.githubusercontent.com/97272787/205049503-e5abdbf5-2f82-4357-8dc2-df316fc6b3ea.png"style="width:300px;height:150px">
 <img width="1434" alt="취업수기디테일" src="https://user-images.githubusercontent.com/97272787/205049517-21d9eae1-8231-443e-8f3d-3ed95399a542.png"style="width:300px;height:150px">
-<img width="1386" alt="만든이" src="https://user-images.githubusercontent.com/97272787/205049632-e9a1918c-4350-41b9-9351-cef5334fa895.png"style="width:300px;height:150px">
+
 </div>
 
 - domain : chosunsite.info
@@ -64,7 +59,7 @@
   </div>
 
 ---
-### Current progress(22.11.17)
+### Current progress(~ 22.11.17)
 - Development of web front end using thymeleaf (html) completed
 - Complete page basic design using bootstrap
 - Create a backend local server using Springboot, Tomcat and JPA
@@ -76,7 +71,7 @@
 
 ---
 
-### Current progress(22.12.01)
+### Current progress(22.11.18 ~ 22.12.01)
 - Supplemetation front-end
 - Data Processing Completed
 - Site State Management and Paging Operations
