@@ -6,7 +6,41 @@
 /*    margin-top: 10px;*/
 /*}*/
 
-.card-img-top{
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+
+.card-img-top {
     height: 15rem;
     object-fit: cover;
+    border-bottom-color: #1a1e21;
+}
+
+
+.info-text{
+    font-size: 25px;
+    content: "";
+    display: block;
+    width: 170px;
+    border-bottom: 1px solid #bcbcbc;
+    margin: 20px;
+
+}
+
+.card-title-main {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.card-text-main {
+    font-size: 20px;
+}
+
+.main-text-header{
+    font-size: 40px;
+    text-align: center;
 }
