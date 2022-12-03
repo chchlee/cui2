@@ -78,6 +78,13 @@
 
 ---
 
+### Final presentation of Capstone Design completed(22.12.02)
+#### feedback
+- Helping students create their own communities
+- Provide a variety of content
+
+---
+
 ### Future improvements(22.12.02 ~ )
 - Site UX/UI Improvements
 - Data accumulation
